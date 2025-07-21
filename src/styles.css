@@ -3,6 +3,9 @@ body {
   font-family: "Inter", sans-serif;
   font-size: 400;
 }
+main {
+  padding: 30px;
+}
 .app {
   background: white;
   max-width: 650px;
@@ -10,4 +13,62 @@ body {
   padding: 30px;
   border-radius: 16px;
   box-shadow: 0 30px 50px #41326414;
+}
+
+header {
+  padding: 30px 0 0 0;
+}
+.search-input {
+  background-color: #edb1f1;
+  color: #27214266;
+  border: none;
+  border-radius: 6px;
+  width: 80%;
+  font-size: 16px;
+  padding: 15px 20px;
+}
+.search-button {
+  background: #c54c82;
+  color: white;
+  padding: 15px 25px;
+  margin: 8px;
+  border-radius: 6px;
+  border: none;
+  font-size: 16px;
+}
+
+a {
+  color: #c54c82;
+}
+footer {
+  padding: 15px 0 0 0;
+  font-size: 15px;
+  text-align: center;
+  color: #27214266;
+}
+.percentage {
+  color: #edb1f1;
+}
+.weather-details {
+  font-size: 18px;
+  color: #27214266;
+  font-weight: 400;
+  line-height: 20px;
+}
+.temperature-icon {
+  display: flex;
+  justify-content: right;
+  position: relative;
+  top: -115px;
+  font-size: 70px;
+  font-weight: bold;
+}
+
+.temperature-details {
+  display: flex;
+}
+.temperature-icon-unit {
+  font-weight: lighter;
+  font-size: 30px;
+  margin-top: 15px;
 }

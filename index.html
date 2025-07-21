@@ -15,22 +15,35 @@
   <body>
     <div class="app">
       <header>
-        <form>
-          <input type="search" placeholder="Enter a city" required />
-          <input type="submit" value="Search" />
+        <form class="search-form">
+          <input
+            type="search"
+            placeholder="Enter a city"
+            required
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-button" />
         </form>
       </header>
       <main>
         <h1>Durban</h1>
-        <div>
-          <p>
+        <div class="weather-info">
+          <p class="weather-details">
             Monday 21:56, overcast clouds
             <br />
-            Humidity: 75%, Wind: 4.81km/h
+            Humidity: <span class="percentage">75%</span>, Wind:<span
+              class="percentage"
+            >
+              4.81km/h</span
+            >
           </p>
+        </div class="temperature-details">
+        <div class="temperature-icon">
+          ☀️25
+          <div class="temperature-icon-unit">°C</div>
         </div>
-        <div>☀️25°C</div>
       </main>
+
       <footer>
         This was coded by
         <a href="https://github.com/Hlengiwe-Mthimkhulu" target="_blank">
