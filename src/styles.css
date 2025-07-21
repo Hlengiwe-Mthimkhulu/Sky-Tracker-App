@@ -1,0 +1,13 @@
+body {
+  background-color: #edb1f1;
+  font-family: "Inter", sans-serif;
+  font-size: 400;
+}
+.app {
+  background: white;
+  max-width: 650px;
+  margin: 50px auto;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 30px 50px #41326414;
+}
