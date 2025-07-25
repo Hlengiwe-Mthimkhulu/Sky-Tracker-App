@@ -47,7 +47,10 @@ footer {
   color: #27214266;
 }
 .percentage {
-  color: #edb1f1;
+  color: purple;
+}
+.wind {
+  color: purple;
 }
 .weather-details {
   margin: 0;
