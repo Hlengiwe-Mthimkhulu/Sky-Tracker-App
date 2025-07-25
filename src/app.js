@@ -7,13 +7,18 @@ function updateWeather(response) {
   let timeElement = document.querySelector("#time");
   let date = new Date(response.data.time * 1000);
 
-  console.log(response.data.time);
+  let iconsElement = document.querySelector("#icons");
 
+  console.log(response.data.condition.description);
   temperatureElement.innerHTML = roundedTemperature;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
   timeElement.innerHTML = formatDate(date);
   conditionElement.innerHTML = response.data.condition.description;
+  iconsElement.innerHTML = `<img
+     src="${response.data.condition.icon_url}"
+     class="temperature-icon"
+   />`;
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
