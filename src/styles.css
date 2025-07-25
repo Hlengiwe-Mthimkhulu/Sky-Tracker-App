@@ -50,29 +50,45 @@ footer {
   color: #edb1f1;
 }
 .weather-details {
+  margin: 0;
   font-size: 18px;
   color: #27214266;
   font-weight: 400;
   line-height: 20px;
+  padding: 15px 0 0 0;
 }
-.temperature-icon {
+
+.city-temp-container {
   display: flex;
-  justify-content: right;
-  position: relative;
-  top: -115px;
-  font-size: 70px;
+  justify-content: space-between;
+  align-items: center;
+}
+.text-info {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+.temperature-app-container {
+  display: flex;
+}
+
+.temperature-icon {
+  font-size: 44px;
+  margin-top: 22px;
+}
+
+.temperature-now {
+  font-size: 88px;
+  margin-left: 10px;
   font-weight: bold;
 }
 
-.temperature-details {
-  display: flex;
+.temperature-unit {
+  margin-top: 16px;
+  font-size: 28px;
 }
-.temperature-icon-unit {
-  font-weight: lighter;
-  font-size: 30px;
-  margin-top: 15px;
-}
-
 .city-input {
-  font-size: 40px;
+  margin: 0;
+  font-size: 38px;
+  line-height: 48px;
 }

@@ -28,21 +28,26 @@
         </form>
       </header>
       <main>
-        <h1 class="city-input" id="city-input">Durban</h1>
-        <div class="weather-info">
-          <p class="weather-details">
-            Monday 21:56, overcast clouds
-            <br />
-            Humidity: <span class="percentage">75%</span>, Wind:<span
-              class="percentage"
-            >
-              4.81km/h</span
-            >
-          </p>
-        </div class="temperature-details">
-        <div class="temperature-icon">
-          ☀️25
-          <div class="temperature-icon-unit">°C</div>
+        <div class="city-temp-container">
+          <div class="text-info">
+            <h1 class="city-input" id="city-input">Durban</h1>
+            <div class="weather-info">
+              <p class="weather-details">
+                Monday 21:56, overcast clouds
+                <br />
+                Humidity: <span class="percentage">75%</span>, Wind:<span
+                  class="percentage"
+                >
+                  4.81km/h</span
+                >
+              </p>
+            </div>
+          </div>
+          <div class="temperature-app-container">
+            <div class="temperature-icon">🌤️</div>
+            <div class="temperature-now" id="temperature-now">20</div>
+            <div class="temperature-unit">°C</div>
+          </div>
         </div>
       </main>
 
@@ -64,6 +69,6 @@
         >
       </footer>
     </div>
-    <script src="src/app.js" ></script>
+    <script src="src/app.js"></script>
   </body>
 </html>
