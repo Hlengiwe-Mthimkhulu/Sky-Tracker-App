@@ -19,6 +19,8 @@ function updateWeather(response) {
      src="${response.data.condition.icon_url}"
      class="temperature-icon"
    />`;
+
+  getForecast(response.data.city);
 }
 function formatDate(date) {
   let minutes = date.getMinutes();
@@ -57,7 +59,14 @@ function launchSubmit(event) {
   searchCity(searchElement.value);
 }
 
-function displayForecast() {
+function getForecast(city) {
+  let apiKey = "1521eab90o8d6c3ad79f5t2266f5a4a4";
+  let apiUrl = `https://api.shecodes.io/weather/v1/forecast?query=${city}&key=${apiKey}&units=metric`;
+  axios(apiUrl).then(displayForecast);
+}
+
+function displayForecast(response) {
+  console.log(response.data);
   let days = ["Fri", "Sat", "Sun", "Mon", "Tue"];
   let forecastHtml = "";
 
@@ -83,4 +92,4 @@ function displayForecast() {
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", launchSubmit);
 
-displayForecast();
+searchCity("Bangkok");
