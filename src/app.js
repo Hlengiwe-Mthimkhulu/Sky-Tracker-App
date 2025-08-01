@@ -9,7 +9,6 @@ function updateWeather(response) {
 
   let iconsElement = document.querySelector("#icons");
 
-  console.log(response.data.condition.description);
   temperatureElement.innerHTML = roundedTemperature;
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
   windElement.innerHTML = `${response.data.wind.speed}km/h`;
@@ -73,8 +72,6 @@ function getForecast(city) {
 }
 
 function displayForecast(response) {
-  console.log(response.data);
-
   let forecastHtml = "";
 
   response.data.daily.forEach(function (day, index) {
